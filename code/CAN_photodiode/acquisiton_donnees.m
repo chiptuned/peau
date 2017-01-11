@@ -1,6 +1,11 @@
 clearvars;
 close all force;
  
+%%% Il faut modifier le type de carte, dans la variable board, 'teensy', ou
+%%% 'arduino'. Ensuite il faut choisir le port dans la variable pin_readV,
+%%% et aussi le port série, que l'on peut retrouver en regardant le port
+%%% sur lequel est conneté le microcontrolleur, ici com5.
+
 %%% Si vous ne possédez pas le package arduino, il faut simplement taper
 %%% "arduino" dans la console, et il vous proposera d'installer les paquets
 %%% nécéssaires
@@ -12,7 +17,7 @@ close all force;
 port = 'com5';
 board = 'teensy';
 pin_readV = 'A0';
-nb_secondes = 10;
+nb_secondes = 5;
 log_path = 'logs/';
 analogresolution = 16; % pour teensy
 

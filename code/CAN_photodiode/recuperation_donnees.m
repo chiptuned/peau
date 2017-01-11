@@ -1,6 +1,12 @@
 clearvars -except ard;
 close all force;
 
+%%% Il faut préciser ou est le dossier des fichiers à ouvrir dans la
+%%% varibale log_path. Ensuite, on peut choisir l'identifiant du fichier à
+%%% trouver, qui doit être une partie de son nom. Si on choisit
+%%% l'identifiant qu'on a choisi pour l'acquisition on va le retrouver.
+%%% S'il y a plusieurs fichiers, le choix sera demandé.
+
 log_path = 'logs/';
 
 %% Demande de l'identifiant

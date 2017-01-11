@@ -1,0 +1,4 @@
+On doit installer d'abord i1share, et ensuite le i1Profiler pour les drivers de l'eye one.
+Ensuite, lorsqu'on fait les mesures, il faudra exporter en excel (on peut d'abord enregistrer
+normalement et exporter plus tard a partir du fichier d'enregistrement standard).
+Un code matlab va être fait (aujourd'hui 11 janvier) afin de parser automatiquement le fichier.
