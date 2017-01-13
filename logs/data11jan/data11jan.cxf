@@ -1,0 +1,1496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CXF [
+<!--Color eXchange Format-->
+<!ELEMENT ID  (#PCDATA) >
+<!ELEMENT Name  (#PCDATA) >
+<!ELEMENT Creator  (#PCDATA) >
+<!ELEMENT Created  (#PCDATA) >
+<!ELEMENT Modified  (#PCDATA) >
+<!ELEMENT Description  (#PCDATA) >
+<!ELEMENT AdditionalData  (Value*) >
+<!ELEMENT Conditions  (ID,Attribute*,Spectrum?) >
+<!ELEMENT Value  (#PCDATA) >
+<!ATTLIST Value
+               Name  CDATA    #IMPLIED  >
+<!ELEMENT CXF  (Name,Description?,Creator?,Created?,Modified?,AdditionalData?,SampleSet*,Conditions*,ICC-Profile*,BinaryObject*) >
+<!ATTLIST CXF
+               Version  CDATA    #REQUIRED  >
+<!ELEMENT SampleSet  (Name,Description?,Creator?,Created?,Modified?,AdditionalData?,Sample*) >
+<!ELEMENT Sample  (Name,Description?,Creator?,Created?,Modified?,AdditionalData?,SampleAttribute*) >
+<!ELEMENT SampleAttribute  (Spectrum?,ColorVector?,DeviceColor?,NamedColor?,Density?,Recipe?) >
+<!ELEMENT Spectrum  (Name?,Description?,Creator?,Created?,Modified?,AdditionalData?,Value+) >
+<!ATTLIST Spectrum
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT ColorVector  (Name?,Description?,Creator?,Created?,Modified?,AdditionalData?,Value+) >
+<!ATTLIST ColorVector
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT AssortmentName  (#PCDATA) >
+<!ELEMENT Thickness  (#PCDATA) >
+<!ELEMENT SubstrateLinkName  (#PCDATA) >
+<!ELEMENT Components  (Value+) >
+<!ELEMENT Recipe  (Name?,Description?,Creator?,Created?,Modified?,AdditionalData?,AssortmentName?,Thickness?,SubstrateLinkName?,Components) >
+<!ATTLIST Recipe
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT ICC-Profile  (Name,Description?,Creator?,Created?,Modified?,AdditionalData?,ICC-Data) >
+<!ATTLIST ICC-Profile
+               Name  CDATA    #IMPLIED  >
+<!ELEMENT BinaryObject  (#PCDATA) >
+<!ATTLIST BinaryObject
+               Name  CDATA    #IMPLIED 
+               MIME-Type  CDATA    #IMPLIED  >
+<!ELEMENT Attribute  (#PCDATA) >
+<!ATTLIST Attribute
+               Name  CDATA    #IMPLIED  >
+<!ELEMENT ICC-Data   EMPTY  >
+<!ELEMENT DeviceColor  (Name?,Description?,Creator?,Created?,Modified?,AdditionalData?,Value+,ICC-ProfileLink?) >
+<!ATTLIST DeviceColor
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT NamedColor  (Name,Description?,Creator?,Created?,Modified?,AdditionalData?) >
+<!ATTLIST NamedColor
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT Density  (Name?,Description?,Creator?,Created?,Modified?,AdditionalData?,DensityData+) >
+<!ATTLIST Density
+               Conditions  CDATA    #REQUIRED  >
+<!ELEMENT ICC-ProfileLink   EMPTY  >
+<!ATTLIST ICC-ProfileLink
+               UniqueID  CDATA    #IMPLIED  >
+<!ELEMENT DensityData  (#PCDATA) >
+<!ATTLIST DensityData
+               Filter  CDATA    #IMPLIED  >
+]>
+<CXF Version="1.0">
+   <Name>i1Share</Name>
+   <Created>2017-01-11/19:38:21</Created>
+   <Modified>2017-01-11/19:49:01</Modified>
+   <SampleSet>
+      <Name>i1Share</Name>
+      <Created>2017-01-11/19:49:01</Created>
+      <Modified>2017-01-11/20:17:12</Modified>
+      <Sample>
+         <Name>Sample</Name>
+         <Created>2017-01-11/20:13:44</Created>
+         <Modified>2017-01-11/20:13:44</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:13:44</Created>
+               <Modified>2017-01-11/20:13:44</Modified>
+               <Value Name="380">0.104948</Value>
+               <Value Name="390">0.114763</Value>
+               <Value Name="400">0.119604</Value>
+               <Value Name="410">0.121839</Value>
+               <Value Name="420">0.124661</Value>
+               <Value Name="430">0.131245</Value>
+               <Value Name="440">0.147211</Value>
+               <Value Name="450">0.170223</Value>
+               <Value Name="460">0.189729</Value>
+               <Value Name="470">0.203205</Value>
+               <Value Name="480">0.213203</Value>
+               <Value Name="490">0.222188</Value>
+               <Value Name="500">0.231402</Value>
+               <Value Name="510">0.238862</Value>
+               <Value Name="520">0.239817</Value>
+               <Value Name="530">0.232726</Value>
+               <Value Name="540">0.226182</Value>
+               <Value Name="550">0.227267</Value>
+               <Value Name="560">0.231322</Value>
+               <Value Name="570">0.232422</Value>
+               <Value Name="580">0.239066</Value>
+               <Value Name="590">0.267597</Value>
+               <Value Name="600">0.300333</Value>
+               <Value Name="610">0.321975</Value>
+               <Value Name="620">0.334179</Value>
+               <Value Name="630">0.340075</Value>
+               <Value Name="640">0.345083</Value>
+               <Value Name="650">0.347823</Value>
+               <Value Name="660">0.348506</Value>
+               <Value Name="670">0.349021</Value>
+               <Value Name="680">0.349448</Value>
+               <Value Name="690">0.350666</Value>
+               <Value Name="700">0.3528</Value>
+               <Value Name="710">0.353805</Value>
+               <Value Name="720">0.352052</Value>
+               <Value Name="730">0.351893</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (1)</Name>
+         <Created>2017-01-11/20:13:47</Created>
+         <Modified>2017-01-11/20:13:47</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:13:47</Created>
+               <Modified>2017-01-11/20:13:47</Modified>
+               <Value Name="380">0.10676</Value>
+               <Value Name="390">0.116224</Value>
+               <Value Name="400">0.121896</Value>
+               <Value Name="410">0.124139</Value>
+               <Value Name="420">0.127486</Value>
+               <Value Name="430">0.133195</Value>
+               <Value Name="440">0.148669</Value>
+               <Value Name="450">0.171762</Value>
+               <Value Name="460">0.192031</Value>
+               <Value Name="470">0.205944</Value>
+               <Value Name="480">0.215579</Value>
+               <Value Name="490">0.224426</Value>
+               <Value Name="500">0.233253</Value>
+               <Value Name="510">0.240169</Value>
+               <Value Name="520">0.240809</Value>
+               <Value Name="530">0.233432</Value>
+               <Value Name="540">0.226405</Value>
+               <Value Name="550">0.22702</Value>
+               <Value Name="560">0.23058</Value>
+               <Value Name="570">0.231969</Value>
+               <Value Name="580">0.238769</Value>
+               <Value Name="590">0.266799</Value>
+               <Value Name="600">0.299513</Value>
+               <Value Name="610">0.321715</Value>
+               <Value Name="620">0.334299</Value>
+               <Value Name="630">0.340329</Value>
+               <Value Name="640">0.345125</Value>
+               <Value Name="650">0.347985</Value>
+               <Value Name="660">0.348749</Value>
+               <Value Name="670">0.348977</Value>
+               <Value Name="680">0.349326</Value>
+               <Value Name="690">0.350754</Value>
+               <Value Name="700">0.353048</Value>
+               <Value Name="710">0.354524</Value>
+               <Value Name="720">0.352598</Value>
+               <Value Name="730">0.352158</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (2)</Name>
+         <Created>2017-01-11/20:13:49</Created>
+         <Modified>2017-01-11/20:13:49</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:13:49</Created>
+               <Modified>2017-01-11/20:13:49</Modified>
+               <Value Name="380">0.106889</Value>
+               <Value Name="390">0.116327</Value>
+               <Value Name="400">0.122234</Value>
+               <Value Name="410">0.125238</Value>
+               <Value Name="420">0.127626</Value>
+               <Value Name="430">0.133771</Value>
+               <Value Name="440">0.149446</Value>
+               <Value Name="450">0.172895</Value>
+               <Value Name="460">0.193223</Value>
+               <Value Name="470">0.207048</Value>
+               <Value Name="480">0.21705</Value>
+               <Value Name="490">0.225662</Value>
+               <Value Name="500">0.234489</Value>
+               <Value Name="510">0.241189</Value>
+               <Value Name="520">0.241897</Value>
+               <Value Name="530">0.235067</Value>
+               <Value Name="540">0.228456</Value>
+               <Value Name="550">0.228431</Value>
+               <Value Name="560">0.231803</Value>
+               <Value Name="570">0.233695</Value>
+               <Value Name="580">0.240749</Value>
+               <Value Name="590">0.267476</Value>
+               <Value Name="600">0.299483</Value>
+               <Value Name="610">0.321718</Value>
+               <Value Name="620">0.334466</Value>
+               <Value Name="630">0.340342</Value>
+               <Value Name="640">0.345444</Value>
+               <Value Name="650">0.348362</Value>
+               <Value Name="660">0.349034</Value>
+               <Value Name="670">0.349461</Value>
+               <Value Name="680">0.34973</Value>
+               <Value Name="690">0.351134</Value>
+               <Value Name="700">0.353287</Value>
+               <Value Name="710">0.354667</Value>
+               <Value Name="720">0.352877</Value>
+               <Value Name="730">0.352333</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (3)</Name>
+         <Created>2017-01-11/20:13:52</Created>
+         <Modified>2017-01-11/20:13:52</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:13:52</Created>
+               <Modified>2017-01-11/20:13:52</Modified>
+               <Value Name="380">0.105193</Value>
+               <Value Name="390">0.114263</Value>
+               <Value Name="400">0.121226</Value>
+               <Value Name="410">0.124238</Value>
+               <Value Name="420">0.126845</Value>
+               <Value Name="430">0.132974</Value>
+               <Value Name="440">0.148218</Value>
+               <Value Name="450">0.172101</Value>
+               <Value Name="460">0.192953</Value>
+               <Value Name="470">0.206744</Value>
+               <Value Name="480">0.216644</Value>
+               <Value Name="490">0.225252</Value>
+               <Value Name="500">0.233492</Value>
+               <Value Name="510">0.240357</Value>
+               <Value Name="520">0.241308</Value>
+               <Value Name="530">0.23522</Value>
+               <Value Name="540">0.228634</Value>
+               <Value Name="550">0.228246</Value>
+               <Value Name="560">0.231203</Value>
+               <Value Name="570">0.233667</Value>
+               <Value Name="580">0.240899</Value>
+               <Value Name="590">0.266523</Value>
+               <Value Name="600">0.297611</Value>
+               <Value Name="610">0.319506</Value>
+               <Value Name="620">0.332201</Value>
+               <Value Name="630">0.338454</Value>
+               <Value Name="640">0.343654</Value>
+               <Value Name="650">0.346448</Value>
+               <Value Name="660">0.347238</Value>
+               <Value Name="670">0.347716</Value>
+               <Value Name="680">0.348289</Value>
+               <Value Name="690">0.349754</Value>
+               <Value Name="700">0.351995</Value>
+               <Value Name="710">0.353501</Value>
+               <Value Name="720">0.351815</Value>
+               <Value Name="730">0.351104</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (4)</Name>
+         <Created>2017-01-11/20:13:55</Created>
+         <Modified>2017-01-11/20:13:55</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:13:55</Created>
+               <Modified>2017-01-11/20:13:55</Modified>
+               <Value Name="380">0.106361</Value>
+               <Value Name="390">0.11528</Value>
+               <Value Name="400">0.12204</Value>
+               <Value Name="410">0.124797</Value>
+               <Value Name="420">0.12722</Value>
+               <Value Name="430">0.133402</Value>
+               <Value Name="440">0.148502</Value>
+               <Value Name="450">0.172766</Value>
+               <Value Name="460">0.194041</Value>
+               <Value Name="470">0.207953</Value>
+               <Value Name="480">0.217485</Value>
+               <Value Name="490">0.225686</Value>
+               <Value Name="500">0.234129</Value>
+               <Value Name="510">0.240598</Value>
+               <Value Name="520">0.241734</Value>
+               <Value Name="530">0.235614</Value>
+               <Value Name="540">0.229029</Value>
+               <Value Name="550">0.228287</Value>
+               <Value Name="560">0.231115</Value>
+               <Value Name="570">0.233755</Value>
+               <Value Name="580">0.241086</Value>
+               <Value Name="590">0.265932</Value>
+               <Value Name="600">0.296003</Value>
+               <Value Name="610">0.317741</Value>
+               <Value Name="620">0.33054</Value>
+               <Value Name="630">0.336574</Value>
+               <Value Name="640">0.341906</Value>
+               <Value Name="650">0.344871</Value>
+               <Value Name="660">0.345863</Value>
+               <Value Name="670">0.346223</Value>
+               <Value Name="680">0.346832</Value>
+               <Value Name="690">0.348349</Value>
+               <Value Name="700">0.350715</Value>
+               <Value Name="710">0.351967</Value>
+               <Value Name="720">0.350154</Value>
+               <Value Name="730">0.350156</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (5)</Name>
+         <Created>2017-01-11/20:14:02</Created>
+         <Modified>2017-01-11/20:14:02</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:02</Created>
+               <Modified>2017-01-11/20:14:02</Modified>
+               <Value Name="380">0.111722</Value>
+               <Value Name="390">0.120215</Value>
+               <Value Name="400">0.126107</Value>
+               <Value Name="410">0.128103</Value>
+               <Value Name="420">0.130188</Value>
+               <Value Name="430">0.135986</Value>
+               <Value Name="440">0.151083</Value>
+               <Value Name="450">0.175377</Value>
+               <Value Name="460">0.196598</Value>
+               <Value Name="470">0.211072</Value>
+               <Value Name="480">0.221188</Value>
+               <Value Name="490">0.230147</Value>
+               <Value Name="500">0.239275</Value>
+               <Value Name="510">0.246162</Value>
+               <Value Name="520">0.246636</Value>
+               <Value Name="530">0.239171</Value>
+               <Value Name="540">0.231515</Value>
+               <Value Name="550">0.230951</Value>
+               <Value Name="560">0.233983</Value>
+               <Value Name="570">0.235724</Value>
+               <Value Name="580">0.242757</Value>
+               <Value Name="590">0.270438</Value>
+               <Value Name="600">0.302557</Value>
+               <Value Name="610">0.323659</Value>
+               <Value Name="620">0.334996</Value>
+               <Value Name="630">0.339786</Value>
+               <Value Name="640">0.344424</Value>
+               <Value Name="650">0.34646</Value>
+               <Value Name="660">0.346692</Value>
+               <Value Name="670">0.346217</Value>
+               <Value Name="680">0.345574</Value>
+               <Value Name="690">0.346083</Value>
+               <Value Name="700">0.34734</Value>
+               <Value Name="710">0.34815</Value>
+               <Value Name="720">0.345405</Value>
+               <Value Name="730">0.344436</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (6)</Name>
+         <Created>2017-01-11/20:14:05</Created>
+         <Modified>2017-01-11/20:14:05</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:05</Created>
+               <Modified>2017-01-11/20:14:05</Modified>
+               <Value Name="380">0.111474</Value>
+               <Value Name="390">0.121053</Value>
+               <Value Name="400">0.125823</Value>
+               <Value Name="410">0.128845</Value>
+               <Value Name="420">0.130549</Value>
+               <Value Name="430">0.136129</Value>
+               <Value Name="440">0.150828</Value>
+               <Value Name="450">0.175219</Value>
+               <Value Name="460">0.197083</Value>
+               <Value Name="470">0.211722</Value>
+               <Value Name="480">0.221731</Value>
+               <Value Name="490">0.230226</Value>
+               <Value Name="500">0.239363</Value>
+               <Value Name="510">0.245874</Value>
+               <Value Name="520">0.24635</Value>
+               <Value Name="530">0.238986</Value>
+               <Value Name="540">0.23118</Value>
+               <Value Name="550">0.230238</Value>
+               <Value Name="560">0.232964</Value>
+               <Value Name="570">0.235176</Value>
+               <Value Name="580">0.242473</Value>
+               <Value Name="590">0.269275</Value>
+               <Value Name="600">0.301065</Value>
+               <Value Name="610">0.322123</Value>
+               <Value Name="620">0.333665</Value>
+               <Value Name="630">0.338569</Value>
+               <Value Name="640">0.342913</Value>
+               <Value Name="650">0.34514</Value>
+               <Value Name="660">0.345475</Value>
+               <Value Name="670">0.344755</Value>
+               <Value Name="680">0.344179</Value>
+               <Value Name="690">0.344823</Value>
+               <Value Name="700">0.346244</Value>
+               <Value Name="710">0.346614</Value>
+               <Value Name="720">0.34387</Value>
+               <Value Name="730">0.34334</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (7)</Name>
+         <Created>2017-01-11/20:14:08</Created>
+         <Modified>2017-01-11/20:14:08</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:08</Created>
+               <Modified>2017-01-11/20:14:08</Modified>
+               <Value Name="380">0.11212</Value>
+               <Value Name="390">0.121507</Value>
+               <Value Name="400">0.126447</Value>
+               <Value Name="410">0.129232</Value>
+               <Value Name="420">0.131835</Value>
+               <Value Name="430">0.136964</Value>
+               <Value Name="440">0.151655</Value>
+               <Value Name="450">0.176046</Value>
+               <Value Name="460">0.198162</Value>
+               <Value Name="470">0.212863</Value>
+               <Value Name="480">0.222782</Value>
+               <Value Name="490">0.231596</Value>
+               <Value Name="500">0.240016</Value>
+               <Value Name="510">0.24652</Value>
+               <Value Name="520">0.246838</Value>
+               <Value Name="530">0.239282</Value>
+               <Value Name="540">0.231429</Value>
+               <Value Name="550">0.23015</Value>
+               <Value Name="560">0.232643</Value>
+               <Value Name="570">0.234968</Value>
+               <Value Name="580">0.242437</Value>
+               <Value Name="590">0.269238</Value>
+               <Value Name="600">0.301268</Value>
+               <Value Name="610">0.322782</Value>
+               <Value Name="620">0.334359</Value>
+               <Value Name="630">0.33953</Value>
+               <Value Name="640">0.343783</Value>
+               <Value Name="650">0.346068</Value>
+               <Value Name="660">0.346156</Value>
+               <Value Name="670">0.345771</Value>
+               <Value Name="680">0.345397</Value>
+               <Value Name="690">0.34576</Value>
+               <Value Name="700">0.34709</Value>
+               <Value Name="710">0.348083</Value>
+               <Value Name="720">0.345442</Value>
+               <Value Name="730">0.34433</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (8)</Name>
+         <Created>2017-01-11/20:14:10</Created>
+         <Modified>2017-01-11/20:14:10</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:10</Created>
+               <Modified>2017-01-11/20:14:10</Modified>
+               <Value Name="380">0.113703</Value>
+               <Value Name="390">0.12263</Value>
+               <Value Name="400">0.128006</Value>
+               <Value Name="410">0.130734</Value>
+               <Value Name="420">0.132664</Value>
+               <Value Name="430">0.138306</Value>
+               <Value Name="440">0.153075</Value>
+               <Value Name="450">0.17751</Value>
+               <Value Name="460">0.199356</Value>
+               <Value Name="470">0.214048</Value>
+               <Value Name="480">0.223994</Value>
+               <Value Name="490">0.23275</Value>
+               <Value Name="500">0.24128</Value>
+               <Value Name="510">0.247808</Value>
+               <Value Name="520">0.2482</Value>
+               <Value Name="530">0.240591</Value>
+               <Value Name="540">0.232625</Value>
+               <Value Name="550">0.231499</Value>
+               <Value Name="560">0.234203</Value>
+               <Value Name="570">0.236305</Value>
+               <Value Name="580">0.243778</Value>
+               <Value Name="590">0.270953</Value>
+               <Value Name="600">0.303377</Value>
+               <Value Name="610">0.324913</Value>
+               <Value Name="620">0.336419</Value>
+               <Value Name="630">0.341508</Value>
+               <Value Name="640">0.345961</Value>
+               <Value Name="650">0.348157</Value>
+               <Value Name="660">0.348052</Value>
+               <Value Name="670">0.34731</Value>
+               <Value Name="680">0.347304</Value>
+               <Value Name="690">0.347714</Value>
+               <Value Name="700">0.349376</Value>
+               <Value Name="710">0.349979</Value>
+               <Value Name="720">0.347559</Value>
+               <Value Name="730">0.346572</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (9)</Name>
+         <Created>2017-01-11/20:14:12</Created>
+         <Modified>2017-01-11/20:14:12</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:12</Created>
+               <Modified>2017-01-11/20:14:12</Modified>
+               <Value Name="380">0.116336</Value>
+               <Value Name="390">0.125193</Value>
+               <Value Name="400">0.131098</Value>
+               <Value Name="410">0.133029</Value>
+               <Value Name="420">0.135627</Value>
+               <Value Name="430">0.141152</Value>
+               <Value Name="440">0.155764</Value>
+               <Value Name="450">0.180182</Value>
+               <Value Name="460">0.202332</Value>
+               <Value Name="470">0.216677</Value>
+               <Value Name="480">0.226644</Value>
+               <Value Name="490">0.235436</Value>
+               <Value Name="500">0.243752</Value>
+               <Value Name="510">0.250456</Value>
+               <Value Name="520">0.250851</Value>
+               <Value Name="530">0.243495</Value>
+               <Value Name="540">0.235557</Value>
+               <Value Name="550">0.234351</Value>
+               <Value Name="560">0.237076</Value>
+               <Value Name="570">0.239115</Value>
+               <Value Name="580">0.246511</Value>
+               <Value Name="590">0.273578</Value>
+               <Value Name="600">0.305975</Value>
+               <Value Name="610">0.327445</Value>
+               <Value Name="620">0.338853</Value>
+               <Value Name="630">0.343886</Value>
+               <Value Name="640">0.34817</Value>
+               <Value Name="650">0.350481</Value>
+               <Value Name="660">0.350553</Value>
+               <Value Name="670">0.349925</Value>
+               <Value Name="680">0.349497</Value>
+               <Value Name="690">0.35028</Value>
+               <Value Name="700">0.351543</Value>
+               <Value Name="710">0.352593</Value>
+               <Value Name="720">0.350062</Value>
+               <Value Name="730">0.34896</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (11)</Name>
+         <Created>2017-01-11/20:14:47</Created>
+         <Modified>2017-01-11/20:14:47</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:47</Created>
+               <Modified>2017-01-11/20:14:47</Modified>
+               <Value Name="380">0.0750588</Value>
+               <Value Name="390">0.082709</Value>
+               <Value Name="400">0.0888454</Value>
+               <Value Name="410">0.093225</Value>
+               <Value Name="420">0.0966653</Value>
+               <Value Name="430">0.102506</Value>
+               <Value Name="440">0.114103</Value>
+               <Value Name="450">0.131474</Value>
+               <Value Name="460">0.148528</Value>
+               <Value Name="470">0.161293</Value>
+               <Value Name="480">0.171339</Value>
+               <Value Name="490">0.180087</Value>
+               <Value Name="500">0.187261</Value>
+               <Value Name="510">0.191462</Value>
+               <Value Name="520">0.190083</Value>
+               <Value Name="530">0.18197</Value>
+               <Value Name="540">0.175894</Value>
+               <Value Name="550">0.17859</Value>
+               <Value Name="560">0.184209</Value>
+               <Value Name="570">0.185375</Value>
+               <Value Name="580">0.193077</Value>
+               <Value Name="590">0.225589</Value>
+               <Value Name="600">0.262211</Value>
+               <Value Name="610">0.285494</Value>
+               <Value Name="620">0.298611</Value>
+               <Value Name="630">0.305928</Value>
+               <Value Name="640">0.312717</Value>
+               <Value Name="650">0.317592</Value>
+               <Value Name="660">0.32069</Value>
+               <Value Name="670">0.323173</Value>
+               <Value Name="680">0.325328</Value>
+               <Value Name="690">0.328447</Value>
+               <Value Name="700">0.332336</Value>
+               <Value Name="710">0.334976</Value>
+               <Value Name="720">0.334859</Value>
+               <Value Name="730">0.336088</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (12)</Name>
+         <Created>2017-01-11/20:14:50</Created>
+         <Modified>2017-01-11/20:14:50</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:50</Created>
+               <Modified>2017-01-11/20:14:50</Modified>
+               <Value Name="380">0.0776191</Value>
+               <Value Name="390">0.0838939</Value>
+               <Value Name="400">0.0893112</Value>
+               <Value Name="410">0.0940169</Value>
+               <Value Name="420">0.0976219</Value>
+               <Value Name="430">0.103578</Value>
+               <Value Name="440">0.115522</Value>
+               <Value Name="450">0.132789</Value>
+               <Value Name="460">0.149231</Value>
+               <Value Name="470">0.162029</Value>
+               <Value Name="480">0.172168</Value>
+               <Value Name="490">0.181271</Value>
+               <Value Name="500">0.188496</Value>
+               <Value Name="510">0.193082</Value>
+               <Value Name="520">0.191649</Value>
+               <Value Name="530">0.183095</Value>
+               <Value Name="540">0.176886</Value>
+               <Value Name="550">0.180046</Value>
+               <Value Name="560">0.185949</Value>
+               <Value Name="570">0.186656</Value>
+               <Value Name="580">0.194037</Value>
+               <Value Name="590">0.227573</Value>
+               <Value Name="600">0.265206</Value>
+               <Value Name="610">0.288081</Value>
+               <Value Name="620">0.300778</Value>
+               <Value Name="630">0.307846</Value>
+               <Value Name="640">0.314252</Value>
+               <Value Name="650">0.318984</Value>
+               <Value Name="660">0.32186</Value>
+               <Value Name="670">0.324311</Value>
+               <Value Name="680">0.326548</Value>
+               <Value Name="690">0.32943</Value>
+               <Value Name="700">0.333078</Value>
+               <Value Name="710">0.335849</Value>
+               <Value Name="720">0.33572</Value>
+               <Value Name="730">0.336827</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (13)</Name>
+         <Created>2017-01-11/20:14:53</Created>
+         <Modified>2017-01-11/20:14:53</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:53</Created>
+               <Modified>2017-01-11/20:14:53</Modified>
+               <Value Name="380">0.0791902</Value>
+               <Value Name="390">0.0853724</Value>
+               <Value Name="400">0.0910711</Value>
+               <Value Name="410">0.0955477</Value>
+               <Value Name="420">0.0993068</Value>
+               <Value Name="430">0.105315</Value>
+               <Value Name="440">0.116725</Value>
+               <Value Name="450">0.134104</Value>
+               <Value Name="460">0.150652</Value>
+               <Value Name="470">0.163382</Value>
+               <Value Name="480">0.173604</Value>
+               <Value Name="490">0.182332</Value>
+               <Value Name="500">0.189405</Value>
+               <Value Name="510">0.194156</Value>
+               <Value Name="520">0.192366</Value>
+               <Value Name="530">0.183783</Value>
+               <Value Name="540">0.177694</Value>
+               <Value Name="550">0.180573</Value>
+               <Value Name="560">0.185997</Value>
+               <Value Name="570">0.186773</Value>
+               <Value Name="580">0.194075</Value>
+               <Value Name="590">0.227586</Value>
+               <Value Name="600">0.265345</Value>
+               <Value Name="610">0.288579</Value>
+               <Value Name="620">0.301381</Value>
+               <Value Name="630">0.308665</Value>
+               <Value Name="640">0.315294</Value>
+               <Value Name="650">0.320188</Value>
+               <Value Name="660">0.323324</Value>
+               <Value Name="670">0.325355</Value>
+               <Value Name="680">0.327266</Value>
+               <Value Name="690">0.329993</Value>
+               <Value Name="700">0.333703</Value>
+               <Value Name="710">0.336437</Value>
+               <Value Name="720">0.336195</Value>
+               <Value Name="730">0.337188</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (14)</Name>
+         <Created>2017-01-11/20:14:54</Created>
+         <Modified>2017-01-11/20:14:54</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:54</Created>
+               <Modified>2017-01-11/20:14:54</Modified>
+               <Value Name="380">0.0796094</Value>
+               <Value Name="390">0.0862</Value>
+               <Value Name="400">0.0919314</Value>
+               <Value Name="410">0.0966053</Value>
+               <Value Name="420">0.100064</Value>
+               <Value Name="430">0.106033</Value>
+               <Value Name="440">0.117392</Value>
+               <Value Name="450">0.13486</Value>
+               <Value Name="460">0.151785</Value>
+               <Value Name="470">0.164608</Value>
+               <Value Name="480">0.174583</Value>
+               <Value Name="490">0.183191</Value>
+               <Value Name="500">0.190397</Value>
+               <Value Name="510">0.194921</Value>
+               <Value Name="520">0.193066</Value>
+               <Value Name="530">0.184519</Value>
+               <Value Name="540">0.17824</Value>
+               <Value Name="550">0.180977</Value>
+               <Value Name="560">0.186448</Value>
+               <Value Name="570">0.187314</Value>
+               <Value Name="580">0.194646</Value>
+               <Value Name="590">0.227486</Value>
+               <Value Name="600">0.265597</Value>
+               <Value Name="610">0.288984</Value>
+               <Value Name="620">0.302118</Value>
+               <Value Name="630">0.309413</Value>
+               <Value Name="640">0.316118</Value>
+               <Value Name="650">0.320892</Value>
+               <Value Name="660">0.323748</Value>
+               <Value Name="670">0.325787</Value>
+               <Value Name="680">0.32787</Value>
+               <Value Name="690">0.330956</Value>
+               <Value Name="700">0.334347</Value>
+               <Value Name="710">0.336706</Value>
+               <Value Name="720">0.336396</Value>
+               <Value Name="730">0.337846</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (15)</Name>
+         <Created>2017-01-11/20:14:56</Created>
+         <Modified>2017-01-11/20:14:56</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:14:56</Created>
+               <Modified>2017-01-11/20:14:56</Modified>
+               <Value Name="380">0.0800979</Value>
+               <Value Name="390">0.0859655</Value>
+               <Value Name="400">0.0917029</Value>
+               <Value Name="410">0.0962727</Value>
+               <Value Name="420">0.0998948</Value>
+               <Value Name="430">0.106129</Value>
+               <Value Name="440">0.117512</Value>
+               <Value Name="450">0.134951</Value>
+               <Value Name="460">0.152008</Value>
+               <Value Name="470">0.164751</Value>
+               <Value Name="480">0.174775</Value>
+               <Value Name="490">0.183554</Value>
+               <Value Name="500">0.190481</Value>
+               <Value Name="510">0.194788</Value>
+               <Value Name="520">0.193096</Value>
+               <Value Name="530">0.184785</Value>
+               <Value Name="540">0.17845</Value>
+               <Value Name="550">0.180968</Value>
+               <Value Name="560">0.186255</Value>
+               <Value Name="570">0.187277</Value>
+               <Value Name="580">0.194702</Value>
+               <Value Name="590">0.22736</Value>
+               <Value Name="600">0.265071</Value>
+               <Value Name="610">0.288738</Value>
+               <Value Name="620">0.30193</Value>
+               <Value Name="630">0.309193</Value>
+               <Value Name="640">0.315787</Value>
+               <Value Name="650">0.320563</Value>
+               <Value Name="660">0.323322</Value>
+               <Value Name="670">0.32552</Value>
+               <Value Name="680">0.327689</Value>
+               <Value Name="690">0.330725</Value>
+               <Value Name="700">0.334103</Value>
+               <Value Name="710">0.336568</Value>
+               <Value Name="720">0.336252</Value>
+               <Value Name="730">0.337574</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (10)</Name>
+         <Created>2017-01-11/20:15:39</Created>
+         <Modified>2017-01-11/20:15:39</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:15:39</Created>
+               <Modified>2017-01-11/20:15:39</Modified>
+               <Value Name="380">0.0517636</Value>
+               <Value Name="390">0.0559599</Value>
+               <Value Name="400">0.0606357</Value>
+               <Value Name="410">0.0643535</Value>
+               <Value Name="420">0.0668796</Value>
+               <Value Name="430">0.0709307</Value>
+               <Value Name="440">0.0781495</Value>
+               <Value Name="450">0.0901279</Value>
+               <Value Name="460">0.102756</Value>
+               <Value Name="470">0.111583</Value>
+               <Value Name="480">0.117646</Value>
+               <Value Name="490">0.122781</Value>
+               <Value Name="500">0.12626</Value>
+               <Value Name="510">0.128061</Value>
+               <Value Name="520">0.127907</Value>
+               <Value Name="530">0.125089</Value>
+               <Value Name="540">0.122005</Value>
+               <Value Name="550">0.121446</Value>
+               <Value Name="560">0.123471</Value>
+               <Value Name="570">0.127138</Value>
+               <Value Name="580">0.133712</Value>
+               <Value Name="590">0.148993</Value>
+               <Value Name="600">0.16973</Value>
+               <Value Name="610">0.186766</Value>
+               <Value Name="620">0.197321</Value>
+               <Value Name="630">0.203294</Value>
+               <Value Name="640">0.208863</Value>
+               <Value Name="650">0.212631</Value>
+               <Value Name="660">0.214641</Value>
+               <Value Name="670">0.21672</Value>
+               <Value Name="680">0.21905</Value>
+               <Value Name="690">0.222044</Value>
+               <Value Name="700">0.225456</Value>
+               <Value Name="710">0.22809</Value>
+               <Value Name="720">0.227961</Value>
+               <Value Name="730">0.22956</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (16)</Name>
+         <Created>2017-01-11/20:15:41</Created>
+         <Modified>2017-01-11/20:15:41</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:15:41</Created>
+               <Modified>2017-01-11/20:15:41</Modified>
+               <Value Name="380">0.0521729</Value>
+               <Value Name="390">0.0568178</Value>
+               <Value Name="400">0.0623965</Value>
+               <Value Name="410">0.0659787</Value>
+               <Value Name="420">0.0691462</Value>
+               <Value Name="430">0.07283</Value>
+               <Value Name="440">0.0800301</Value>
+               <Value Name="450">0.0923149</Value>
+               <Value Name="460">0.104644</Value>
+               <Value Name="470">0.113264</Value>
+               <Value Name="480">0.119511</Value>
+               <Value Name="490">0.124254</Value>
+               <Value Name="500">0.127774</Value>
+               <Value Name="510">0.129724</Value>
+               <Value Name="520">0.12978</Value>
+               <Value Name="530">0.127234</Value>
+               <Value Name="540">0.124158</Value>
+               <Value Name="550">0.12353</Value>
+               <Value Name="560">0.125366</Value>
+               <Value Name="570">0.128899</Value>
+               <Value Name="580">0.135318</Value>
+               <Value Name="590">0.150075</Value>
+               <Value Name="600">0.169998</Value>
+               <Value Name="610">0.186855</Value>
+               <Value Name="620">0.197379</Value>
+               <Value Name="630">0.203159</Value>
+               <Value Name="640">0.208421</Value>
+               <Value Name="650">0.212011</Value>
+               <Value Name="660">0.214083</Value>
+               <Value Name="670">0.216089</Value>
+               <Value Name="680">0.218298</Value>
+               <Value Name="690">0.221356</Value>
+               <Value Name="700">0.224576</Value>
+               <Value Name="710">0.227415</Value>
+               <Value Name="720">0.227556</Value>
+               <Value Name="730">0.228889</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (17)</Name>
+         <Created>2017-01-11/20:15:43</Created>
+         <Modified>2017-01-11/20:15:43</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:15:43</Created>
+               <Modified>2017-01-11/20:15:43</Modified>
+               <Value Name="380">0.053813</Value>
+               <Value Name="390">0.0578007</Value>
+               <Value Name="400">0.0622714</Value>
+               <Value Name="410">0.0656768</Value>
+               <Value Name="420">0.0686114</Value>
+               <Value Name="430">0.0722254</Value>
+               <Value Name="440">0.0789587</Value>
+               <Value Name="450">0.0916141</Value>
+               <Value Name="460">0.105041</Value>
+               <Value Name="470">0.1145</Value>
+               <Value Name="480">0.120785</Value>
+               <Value Name="490">0.125385</Value>
+               <Value Name="500">0.128398</Value>
+               <Value Name="510">0.129751</Value>
+               <Value Name="520">0.12862</Value>
+               <Value Name="530">0.124656</Value>
+               <Value Name="540">0.120432</Value>
+               <Value Name="550">0.119403</Value>
+               <Value Name="560">0.121108</Value>
+               <Value Name="570">0.124345</Value>
+               <Value Name="580">0.130946</Value>
+               <Value Name="590">0.147428</Value>
+               <Value Name="600">0.170351</Value>
+               <Value Name="610">0.189423</Value>
+               <Value Name="620">0.201066</Value>
+               <Value Name="630">0.207469</Value>
+               <Value Name="640">0.213003</Value>
+               <Value Name="650">0.216988</Value>
+               <Value Name="660">0.219243</Value>
+               <Value Name="670">0.221444</Value>
+               <Value Name="680">0.223518</Value>
+               <Value Name="690">0.226805</Value>
+               <Value Name="700">0.230296</Value>
+               <Value Name="710">0.233079</Value>
+               <Value Name="720">0.233342</Value>
+               <Value Name="730">0.234497</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (18)</Name>
+         <Created>2017-01-11/20:15:45</Created>
+         <Modified>2017-01-11/20:15:45</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:15:45</Created>
+               <Modified>2017-01-11/20:15:45</Modified>
+               <Value Name="380">0.0479935</Value>
+               <Value Name="390">0.0522981</Value>
+               <Value Name="400">0.0573362</Value>
+               <Value Name="410">0.0610062</Value>
+               <Value Name="420">0.0636646</Value>
+               <Value Name="430">0.0664466</Value>
+               <Value Name="440">0.0730261</Value>
+               <Value Name="450">0.0845196</Value>
+               <Value Name="460">0.0962292</Value>
+               <Value Name="470">0.104524</Value>
+               <Value Name="480">0.110366</Value>
+               <Value Name="490">0.1147</Value>
+               <Value Name="500">0.117543</Value>
+               <Value Name="510">0.118848</Value>
+               <Value Name="520">0.118163</Value>
+               <Value Name="530">0.114694</Value>
+               <Value Name="540">0.11082</Value>
+               <Value Name="550">0.110022</Value>
+               <Value Name="560">0.111577</Value>
+               <Value Name="570">0.114337</Value>
+               <Value Name="580">0.120001</Value>
+               <Value Name="590">0.134466</Value>
+               <Value Name="600">0.154618</Value>
+               <Value Name="610">0.171439</Value>
+               <Value Name="620">0.181785</Value>
+               <Value Name="630">0.187438</Value>
+               <Value Name="640">0.192646</Value>
+               <Value Name="650">0.196145</Value>
+               <Value Name="660">0.198221</Value>
+               <Value Name="670">0.200176</Value>
+               <Value Name="680">0.202122</Value>
+               <Value Name="690">0.205211</Value>
+               <Value Name="700">0.208845</Value>
+               <Value Name="710">0.211099</Value>
+               <Value Name="720">0.211098</Value>
+               <Value Name="730">0.212466</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (19)</Name>
+         <Created>2017-01-11/20:15:47</Created>
+         <Modified>2017-01-11/20:15:47</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:15:47</Created>
+               <Modified>2017-01-11/20:15:47</Modified>
+               <Value Name="380">0.0500499</Value>
+               <Value Name="390">0.0549956</Value>
+               <Value Name="400">0.0606242</Value>
+               <Value Name="410">0.0642881</Value>
+               <Value Name="420">0.0679011</Value>
+               <Value Name="430">0.0720656</Value>
+               <Value Name="440">0.0796262</Value>
+               <Value Name="450">0.0912149</Value>
+               <Value Name="460">0.102671</Value>
+               <Value Name="470">0.110761</Value>
+               <Value Name="480">0.116421</Value>
+               <Value Name="490">0.121226</Value>
+               <Value Name="500">0.124828</Value>
+               <Value Name="510">0.126858</Value>
+               <Value Name="520">0.127046</Value>
+               <Value Name="530">0.124624</Value>
+               <Value Name="540">0.121826</Value>
+               <Value Name="550">0.121464</Value>
+               <Value Name="560">0.123119</Value>
+               <Value Name="570">0.126302</Value>
+               <Value Name="580">0.132</Value>
+               <Value Name="590">0.145588</Value>
+               <Value Name="600">0.164053</Value>
+               <Value Name="610">0.179739</Value>
+               <Value Name="620">0.189624</Value>
+               <Value Name="630">0.195106</Value>
+               <Value Name="640">0.200244</Value>
+               <Value Name="650">0.203537</Value>
+               <Value Name="660">0.20571</Value>
+               <Value Name="670">0.207559</Value>
+               <Value Name="680">0.20951</Value>
+               <Value Name="690">0.212089</Value>
+               <Value Name="700">0.215601</Value>
+               <Value Name="710">0.218175</Value>
+               <Value Name="720">0.218122</Value>
+               <Value Name="730">0.2193</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (20)</Name>
+         <Created>2017-01-11/20:16:32</Created>
+         <Modified>2017-01-11/20:16:32</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:16:32</Created>
+               <Modified>2017-01-11/20:16:32</Modified>
+               <Value Name="380">0.163782</Value>
+               <Value Name="390">0.174664</Value>
+               <Value Name="400">0.175348</Value>
+               <Value Name="410">0.17363</Value>
+               <Value Name="420">0.174185</Value>
+               <Value Name="430">0.183205</Value>
+               <Value Name="440">0.208649</Value>
+               <Value Name="450">0.24666</Value>
+               <Value Name="460">0.278532</Value>
+               <Value Name="470">0.298148</Value>
+               <Value Name="480">0.310211</Value>
+               <Value Name="490">0.31982</Value>
+               <Value Name="500">0.326861</Value>
+               <Value Name="510">0.329016</Value>
+               <Value Name="520">0.321485</Value>
+               <Value Name="530">0.303273</Value>
+               <Value Name="540">0.288366</Value>
+               <Value Name="550">0.286956</Value>
+               <Value Name="560">0.290165</Value>
+               <Value Name="570">0.288105</Value>
+               <Value Name="580">0.293796</Value>
+               <Value Name="590">0.331057</Value>
+               <Value Name="600">0.372146</Value>
+               <Value Name="610">0.394906</Value>
+               <Value Name="620">0.404738</Value>
+               <Value Name="630">0.407356</Value>
+               <Value Name="640">0.409303</Value>
+               <Value Name="650">0.409238</Value>
+               <Value Name="660">0.407309</Value>
+               <Value Name="670">0.404728</Value>
+               <Value Name="680">0.402371</Value>
+               <Value Name="690">0.401657</Value>
+               <Value Name="700">0.401625</Value>
+               <Value Name="710">0.400931</Value>
+               <Value Name="720">0.397225</Value>
+               <Value Name="730">0.395194</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (21)</Name>
+         <Created>2017-01-11/20:16:33</Created>
+         <Modified>2017-01-11/20:16:33</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:16:33</Created>
+               <Modified>2017-01-11/20:16:33</Modified>
+               <Value Name="380">0.164296</Value>
+               <Value Name="390">0.175861</Value>
+               <Value Name="400">0.177797</Value>
+               <Value Name="410">0.176235</Value>
+               <Value Name="420">0.176641</Value>
+               <Value Name="430">0.184811</Value>
+               <Value Name="440">0.209949</Value>
+               <Value Name="450">0.248889</Value>
+               <Value Name="460">0.281605</Value>
+               <Value Name="470">0.301184</Value>
+               <Value Name="480">0.313066</Value>
+               <Value Name="490">0.322324</Value>
+               <Value Name="500">0.329065</Value>
+               <Value Name="510">0.330831</Value>
+               <Value Name="520">0.323309</Value>
+               <Value Name="530">0.305593</Value>
+               <Value Name="540">0.290716</Value>
+               <Value Name="550">0.288549</Value>
+               <Value Name="560">0.291145</Value>
+               <Value Name="570">0.289574</Value>
+               <Value Name="580">0.295483</Value>
+               <Value Name="590">0.331646</Value>
+               <Value Name="600">0.371869</Value>
+               <Value Name="610">0.394785</Value>
+               <Value Name="620">0.404714</Value>
+               <Value Name="630">0.407258</Value>
+               <Value Name="640">0.409457</Value>
+               <Value Name="650">0.409173</Value>
+               <Value Name="660">0.407643</Value>
+               <Value Name="670">0.405143</Value>
+               <Value Name="680">0.402612</Value>
+               <Value Name="690">0.401351</Value>
+               <Value Name="700">0.401783</Value>
+               <Value Name="710">0.401143</Value>
+               <Value Name="720">0.39722</Value>
+               <Value Name="730">0.394776</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (22)</Name>
+         <Created>2017-01-11/20:16:36</Created>
+         <Modified>2017-01-11/20:16:36</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:16:36</Created>
+               <Modified>2017-01-11/20:16:36</Modified>
+               <Value Name="380">0.164804</Value>
+               <Value Name="390">0.177037</Value>
+               <Value Name="400">0.17921</Value>
+               <Value Name="410">0.177058</Value>
+               <Value Name="420">0.177425</Value>
+               <Value Name="430">0.185331</Value>
+               <Value Name="440">0.209858</Value>
+               <Value Name="450">0.249647</Value>
+               <Value Name="460">0.283199</Value>
+               <Value Name="470">0.302997</Value>
+               <Value Name="480">0.314579</Value>
+               <Value Name="490">0.323404</Value>
+               <Value Name="500">0.329272</Value>
+               <Value Name="510">0.330808</Value>
+               <Value Name="520">0.323271</Value>
+               <Value Name="530">0.306086</Value>
+               <Value Name="540">0.291443</Value>
+               <Value Name="550">0.288248</Value>
+               <Value Name="560">0.290408</Value>
+               <Value Name="570">0.289617</Value>
+               <Value Name="580">0.295942</Value>
+               <Value Name="590">0.330389</Value>
+               <Value Name="600">0.369779</Value>
+               <Value Name="610">0.393007</Value>
+               <Value Name="620">0.403226</Value>
+               <Value Name="630">0.406055</Value>
+               <Value Name="640">0.408033</Value>
+               <Value Name="650">0.408153</Value>
+               <Value Name="660">0.40611</Value>
+               <Value Name="670">0.403541</Value>
+               <Value Name="680">0.40142</Value>
+               <Value Name="690">0.400325</Value>
+               <Value Name="700">0.400421</Value>
+               <Value Name="710">0.399732</Value>
+               <Value Name="720">0.395872</Value>
+               <Value Name="730">0.393697</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (23)</Name>
+         <Created>2017-01-11/20:16:39</Created>
+         <Modified>2017-01-11/20:16:39</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:16:39</Created>
+               <Modified>2017-01-11/20:16:39</Modified>
+               <Value Name="380">0.165477</Value>
+               <Value Name="390">0.177478</Value>
+               <Value Name="400">0.180334</Value>
+               <Value Name="410">0.178434</Value>
+               <Value Name="420">0.178014</Value>
+               <Value Name="430">0.185767</Value>
+               <Value Name="440">0.209857</Value>
+               <Value Name="450">0.250129</Value>
+               <Value Name="460">0.28506</Value>
+               <Value Name="470">0.304856</Value>
+               <Value Name="480">0.31594</Value>
+               <Value Name="490">0.324516</Value>
+               <Value Name="500">0.330209</Value>
+               <Value Name="510">0.331115</Value>
+               <Value Name="520">0.323674</Value>
+               <Value Name="530">0.307081</Value>
+               <Value Name="540">0.292537</Value>
+               <Value Name="550">0.288701</Value>
+               <Value Name="560">0.290437</Value>
+               <Value Name="570">0.290062</Value>
+               <Value Name="580">0.296714</Value>
+               <Value Name="590">0.33026</Value>
+               <Value Name="600">0.369001</Value>
+               <Value Name="610">0.392526</Value>
+               <Value Name="620">0.402885</Value>
+               <Value Name="630">0.405706</Value>
+               <Value Name="640">0.407819</Value>
+               <Value Name="650">0.407972</Value>
+               <Value Name="660">0.40598</Value>
+               <Value Name="670">0.403317</Value>
+               <Value Name="680">0.401124</Value>
+               <Value Name="690">0.400146</Value>
+               <Value Name="700">0.400319</Value>
+               <Value Name="710">0.399478</Value>
+               <Value Name="720">0.395636</Value>
+               <Value Name="730">0.393442</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (24)</Name>
+         <Created>2017-01-11/20:16:43</Created>
+         <Modified>2017-01-11/20:16:43</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:16:43</Created>
+               <Modified>2017-01-11/20:16:43</Modified>
+               <Value Name="380">0.166541</Value>
+               <Value Name="390">0.17932</Value>
+               <Value Name="400">0.182245</Value>
+               <Value Name="410">0.180031</Value>
+               <Value Name="420">0.179276</Value>
+               <Value Name="430">0.186693</Value>
+               <Value Name="440">0.211691</Value>
+               <Value Name="450">0.252354</Value>
+               <Value Name="460">0.287408</Value>
+               <Value Name="470">0.307304</Value>
+               <Value Name="480">0.318094</Value>
+               <Value Name="490">0.326239</Value>
+               <Value Name="500">0.33153</Value>
+               <Value Name="510">0.332217</Value>
+               <Value Name="520">0.325189</Value>
+               <Value Name="530">0.309142</Value>
+               <Value Name="540">0.294555</Value>
+               <Value Name="550">0.29037</Value>
+               <Value Name="560">0.291775</Value>
+               <Value Name="570">0.291932</Value>
+               <Value Name="580">0.298806</Value>
+               <Value Name="590">0.331171</Value>
+               <Value Name="600">0.368538</Value>
+               <Value Name="610">0.391349</Value>
+               <Value Name="620">0.401556</Value>
+               <Value Name="630">0.40446</Value>
+               <Value Name="640">0.406617</Value>
+               <Value Name="650">0.40646</Value>
+               <Value Name="660">0.404498</Value>
+               <Value Name="670">0.401884</Value>
+               <Value Name="680">0.399819</Value>
+               <Value Name="690">0.398834</Value>
+               <Value Name="700">0.398627</Value>
+               <Value Name="710">0.397924</Value>
+               <Value Name="720">0.394145</Value>
+               <Value Name="730">0.391908</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (25)</Name>
+         <Created>2017-01-11/20:17:01</Created>
+         <Modified>2017-01-11/20:17:01</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:17:01</Created>
+               <Modified>2017-01-11/20:17:01</Modified>
+               <Value Name="380">0.16107</Value>
+               <Value Name="390">0.16971</Value>
+               <Value Name="400">0.170404</Value>
+               <Value Name="410">0.167624</Value>
+               <Value Name="420">0.166471</Value>
+               <Value Name="430">0.172002</Value>
+               <Value Name="440">0.193026</Value>
+               <Value Name="450">0.234089</Value>
+               <Value Name="460">0.273662</Value>
+               <Value Name="470">0.296716</Value>
+               <Value Name="480">0.308675</Value>
+               <Value Name="490">0.316194</Value>
+               <Value Name="500">0.319573</Value>
+               <Value Name="510">0.317607</Value>
+               <Value Name="520">0.307107</Value>
+               <Value Name="530">0.287202</Value>
+               <Value Name="540">0.27011</Value>
+               <Value Name="550">0.264912</Value>
+               <Value Name="560">0.266491</Value>
+               <Value Name="570">0.267042</Value>
+               <Value Name="580">0.275056</Value>
+               <Value Name="590">0.310444</Value>
+               <Value Name="600">0.353925</Value>
+               <Value Name="610">0.383262</Value>
+               <Value Name="620">0.39779</Value>
+               <Value Name="630">0.40305</Value>
+               <Value Name="640">0.40668</Value>
+               <Value Name="650">0.407856</Value>
+               <Value Name="660">0.4068</Value>
+               <Value Name="670">0.405066</Value>
+               <Value Name="680">0.403684</Value>
+               <Value Name="690">0.40344</Value>
+               <Value Name="700">0.404034</Value>
+               <Value Name="710">0.403647</Value>
+               <Value Name="720">0.399622</Value>
+               <Value Name="730">0.39696</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (26)</Name>
+         <Created>2017-01-11/20:17:03</Created>
+         <Modified>2017-01-11/20:17:03</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:17:03</Created>
+               <Modified>2017-01-11/20:17:03</Modified>
+               <Value Name="380">0.164281</Value>
+               <Value Name="390">0.173091</Value>
+               <Value Name="400">0.173906</Value>
+               <Value Name="410">0.171706</Value>
+               <Value Name="420">0.170565</Value>
+               <Value Name="430">0.175679</Value>
+               <Value Name="440">0.196931</Value>
+               <Value Name="450">0.238497</Value>
+               <Value Name="460">0.27839</Value>
+               <Value Name="470">0.301847</Value>
+               <Value Name="480">0.313887</Value>
+               <Value Name="490">0.321092</Value>
+               <Value Name="500">0.323724</Value>
+               <Value Name="510">0.321068</Value>
+               <Value Name="520">0.310701</Value>
+               <Value Name="530">0.291717</Value>
+               <Value Name="540">0.274817</Value>
+               <Value Name="550">0.268747</Value>
+               <Value Name="560">0.269703</Value>
+               <Value Name="570">0.27082</Value>
+               <Value Name="580">0.279009</Value>
+               <Value Name="590">0.31274</Value>
+               <Value Name="600">0.354721</Value>
+               <Value Name="610">0.383107</Value>
+               <Value Name="620">0.397168</Value>
+               <Value Name="630">0.402285</Value>
+               <Value Name="640">0.405803</Value>
+               <Value Name="650">0.407004</Value>
+               <Value Name="660">0.405769</Value>
+               <Value Name="670">0.404085</Value>
+               <Value Name="680">0.402858</Value>
+               <Value Name="690">0.402951</Value>
+               <Value Name="700">0.403488</Value>
+               <Value Name="710">0.403082</Value>
+               <Value Name="720">0.398884</Value>
+               <Value Name="730">0.396529</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (27)</Name>
+         <Created>2017-01-11/20:17:06</Created>
+         <Modified>2017-01-11/20:17:06</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:17:06</Created>
+               <Modified>2017-01-11/20:17:06</Modified>
+               <Value Name="380">0.166673</Value>
+               <Value Name="390">0.175637</Value>
+               <Value Name="400">0.176799</Value>
+               <Value Name="410">0.174358</Value>
+               <Value Name="420">0.173614</Value>
+               <Value Name="430">0.178455</Value>
+               <Value Name="440">0.199182</Value>
+               <Value Name="450">0.241468</Value>
+               <Value Name="460">0.282333</Value>
+               <Value Name="470">0.306076</Value>
+               <Value Name="480">0.317593</Value>
+               <Value Name="490">0.323941</Value>
+               <Value Name="500">0.326322</Value>
+               <Value Name="510">0.323295</Value>
+               <Value Name="520">0.3132</Value>
+               <Value Name="530">0.294923</Value>
+               <Value Name="540">0.278007</Value>
+               <Value Name="550">0.271361</Value>
+               <Value Name="560">0.271835</Value>
+               <Value Name="570">0.273657</Value>
+               <Value Name="580">0.281948</Value>
+               <Value Name="590">0.313925</Value>
+               <Value Name="600">0.353898</Value>
+               <Value Name="610">0.381644</Value>
+               <Value Name="620">0.39569</Value>
+               <Value Name="630">0.400525</Value>
+               <Value Name="640">0.404288</Value>
+               <Value Name="650">0.405184</Value>
+               <Value Name="660">0.40388</Value>
+               <Value Name="670">0.402204</Value>
+               <Value Name="680">0.400842</Value>
+               <Value Name="690">0.400959</Value>
+               <Value Name="700">0.401287</Value>
+               <Value Name="710">0.400843</Value>
+               <Value Name="720">0.397086</Value>
+               <Value Name="730">0.394327</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (28)</Name>
+         <Created>2017-01-11/20:17:09</Created>
+         <Modified>2017-01-11/20:17:09</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:17:09</Created>
+               <Modified>2017-01-11/20:17:09</Modified>
+               <Value Name="380">0.164063</Value>
+               <Value Name="390">0.172844</Value>
+               <Value Name="400">0.173763</Value>
+               <Value Name="410">0.171851</Value>
+               <Value Name="420">0.170678</Value>
+               <Value Name="430">0.175502</Value>
+               <Value Name="440">0.196688</Value>
+               <Value Name="450">0.240009</Value>
+               <Value Name="460">0.282103</Value>
+               <Value Name="470">0.305684</Value>
+               <Value Name="480">0.31696</Value>
+               <Value Name="490">0.323146</Value>
+               <Value Name="500">0.325001</Value>
+               <Value Name="510">0.322053</Value>
+               <Value Name="520">0.312221</Value>
+               <Value Name="530">0.294365</Value>
+               <Value Name="540">0.277717</Value>
+               <Value Name="550">0.270502</Value>
+               <Value Name="560">0.270608</Value>
+               <Value Name="570">0.272938</Value>
+               <Value Name="580">0.281751</Value>
+               <Value Name="590">0.312329</Value>
+               <Value Name="600">0.350844</Value>
+               <Value Name="610">0.377991</Value>
+               <Value Name="620">0.391573</Value>
+               <Value Name="630">0.396512</Value>
+               <Value Name="640">0.400024</Value>
+               <Value Name="650">0.400779</Value>
+               <Value Name="660">0.399569</Value>
+               <Value Name="670">0.397934</Value>
+               <Value Name="680">0.396424</Value>
+               <Value Name="690">0.396258</Value>
+               <Value Name="700">0.396884</Value>
+               <Value Name="710">0.396229</Value>
+               <Value Name="720">0.392066</Value>
+               <Value Name="730">0.389452</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+      <Sample>
+         <Name>Sample (29)</Name>
+         <Created>2017-01-11/20:17:12</Created>
+         <Modified>2017-01-11/20:17:12</Modified>
+         <SampleAttribute>
+            <Spectrum Conditions="2">
+               <Created>2017-01-11/20:17:12</Created>
+               <Modified>2017-01-11/20:17:12</Modified>
+               <Value Name="380">0.000831512</Value>
+               <Value Name="390">0.000611301</Value>
+               <Value Name="400">0.000516699</Value>
+               <Value Name="410">0.000829041</Value>
+               <Value Name="420">0.00111922</Value>
+               <Value Name="430">0.00285924</Value>
+               <Value Name="440">0.0031409</Value>
+               <Value Name="450">0.00133521</Value>
+               <Value Name="460">0.00109012</Value>
+               <Value Name="470">0.000718561</Value>
+               <Value Name="480">0.00111578</Value>
+               <Value Name="490">0.00142741</Value>
+               <Value Name="500">0.000701412</Value>
+               <Value Name="510">8.86064e-005</Value>
+               <Value Name="520">3.94105e-005</Value>
+               <Value Name="530">0.000556541</Value>
+               <Value Name="540">0.00281427</Value>
+               <Value Name="550">0.00262886</Value>
+               <Value Name="560">0.000374755</Value>
+               <Value Name="570">7.04828e-005</Value>
+               <Value Name="580">0.000643687</Value>
+               <Value Name="590">0.000958225</Value>
+               <Value Name="600">0.000769626</Value>
+               <Value Name="610">0.00188234</Value>
+               <Value Name="620">0.00133473</Value>
+               <Value Name="630">0.000452403</Value>
+               <Value Name="640">0.000323161</Value>
+               <Value Name="650">9.97534e-005</Value>
+               <Value Name="660">0.000145717</Value>
+               <Value Name="670">9.18298e-005</Value>
+               <Value Name="680">0.000113147</Value>
+               <Value Name="690">-9.85875e-005</Value>
+               <Value Name="700">-9.73376e-007</Value>
+               <Value Name="710">0.000377964</Value>
+               <Value Name="720">0.000181959</Value>
+               <Value Name="730">0.000442658</Value>
+            </Spectrum>
+         </SampleAttribute>
+      </Sample>
+   </SampleSet>
+   <Conditions>
+      <ID>2</ID>
+      <Attribute Name="ColorSpaceDescription.AbsoluteOrDeltaVector">AbsoluteVector</Attribute>
+      <Attribute Name="ColorSpaceDescription.DeltaEFormula">CIELab</Attribute>
+      <Attribute Name="ColorSpaceDescription.Type">CIELab</Attribute>
+      <Attribute Name="Colorimetric.DensityFilterMode">Auto</Attribute>
+      <Attribute Name="Colorimetric.DensityStandard">DIN</Attribute>
+      <Attribute Name="Colorimetric.Illumination">D50</Attribute>
+      <Attribute Name="Colorimetric.Observer">TwoDegree</Attribute>
+      <Attribute Name="Colorimetric.WhiteBase">Automatic</Attribute>
+      <Attribute Name="Physical.Filter">No</Attribute>
+      <Attribute Name="Physical.NumberOfDataPointsSpectrum">36</Attribute>
+      <Attribute Name="Physical.SpectrumType">Remission</Attribute>
+      <Attribute Name="Physical.WavelengthSpectrumMax">730nm</Attribute>
+      <Attribute Name="Physical.WavelengthSpectrumMin">380nm</Attribute>
+   </Conditions>
+</CXF>

@@ -17,7 +17,7 @@ close all force;
 port = 'com5';
 board = 'teensy';
 pin_readV = 'A0';
-nb_secondes = 5;
+nb_secondes = 30;
 log_path = 'logs/';
 analogresolution = 16; % pour teensy
 
