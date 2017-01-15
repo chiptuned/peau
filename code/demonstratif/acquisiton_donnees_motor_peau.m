@@ -14,6 +14,7 @@ if ~exist('ard','var')
         fclose(instrfind);
     end
     ard = serial(port,'BaudRate',115200,'DataBits',8);
+    set(ard, 'Timeout', 1);
     fopen(ard);
 end
 if ~exist(log_path(1:end-1),'dir')
