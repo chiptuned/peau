@@ -14,20 +14,20 @@
  */
  
 // Ici on définit les pins
-#define IN1  7
-#define IN2  6
-#define IN3  5
-#define IN4  4
+#define IN1  4
+#define IN2  5
+#define IN3  6
+#define IN4  7
 #define IN_VOLTAGE A0
 #define IN_BUTTON 3
 #define LED 13
 
 // Ici on définit les variables d'échantillonage/balayage
 int angle = 110;
-uint32_t time_scanning_millis = 1500;
+uint32_t time_scanning_millis = 2000;
 uint32_t pause_scanning_millis = 400;
 double angular_resolution = 0.5;
-int analog_res = 10;
+int analog_res = 16;
 int nb_scans = 1;
 
 // Initialisation des valeurs
@@ -48,7 +48,7 @@ void setup(){
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
-  //analogReadResolution(analog_res) // IF TEENSY
+  analogReadResolution(analog_res); // IF TEENSY
   delay(100);
   steps_scan = double(angle)*4096/360;
   time_each_step = time_scanning_millis*1000/steps_scan;
