@@ -6,6 +6,11 @@ noms = {'thibaud', 'wassim', 'vincent', ...
     'moctar', 'amadou', 'boris', 'mahmoud'};
 angles = [74,60,46,34];
 
+%legend_polar_triche = {'thibaud, peau seche','wassim, peau seche',...
+%    'wassim, peau humidifiee','vincent, peau seche',...
+%    'vincent, peau humidifiee','moctar, peau humidifiee',...
+%    'moctar, peau sèche','thibaud, peau humide'};
+
 %% Insertion dans un tableau
 % classe mouille angle valeur
 data = zeros(length(data_photodiode), 4);
@@ -32,6 +37,7 @@ for ind = 1:length(data_photodiode)
     
 end
 
+
 %% Filtrage des mauvais fichiers + rassemblement des fichiers en une mesure
 data = data(data(:,1)~=0,:);
 for ind = 1:length(noms)
@@ -50,6 +56,15 @@ end
 % Remplacement des angles
 data(:,3) = angles(data(:,3));
 
+% T
+data(end-4:end-1,1) = 1;
+data(end-4:end-1,2) = 1;
+data(22:25,2) = 1;
+data(26,1) = 17;
+data(27:30,1) = 4;
+data(5,1) = 15;
+color = 'kgbrgbwb'
+
 %% Affichage
 legend_polar = {};
 for ind = 1:length(noms)
@@ -60,12 +75,10 @@ for ind = 1:length(noms)
         
         if numel(theta) > 1
             if ind2 == 0
-                marker = '-';
+                polar(theta*pi/180,rho,['-', color(ind)]);
             else
-                marker = '--';
+                polar(theta*pi/180,rho,['--', color(ind)]);
             end
-            % rajouter un truc pour avoir la meme couleur
-            polar(theta*pi/180,rho,marker)
             hold on;
             if ind2
                 strpeau = ' humidifie';
@@ -76,7 +89,7 @@ for ind = 1:length(noms)
         end
     end
 end
-legend(legend_polar_triche)
+legend(legend_polar)
 xl = get(gca,'XLim'); yl = get(gca,'YLim');
 set(gca,'XLim', [0 xl(2)], 'YLim', [0 yl(2)]);
 ylabel('tension (Volt)') 
