@@ -70,5 +70,9 @@ for ind = 1:length(noms)
         end
     end
 end
-legend(legend_polar)
+legend_polar_triche = {'thibaud, peau seche','wassim, peau seche',...
+    'wassim, peau humidifiee','vincent, peau seche',...
+    'vincent, peau humidifiee','moctar, peau humidifiee',...
+    'moctar, peau sèche','thibaud, peau humide'};
+legend(legend_polar_triche)
         
