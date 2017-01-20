@@ -3,6 +3,7 @@ close all force;
 
 log_path = 'logs/';
 d = dir([log_path, '*.csv']);
+% name meanON stdON meanOFF stdOFF
 data_photodiode = cell(length(d),5);
 
 for ind = 1:length(d)
