@@ -1,15 +1,15 @@
-clear variables;
-close all force;
+%clear variables;
+%close all force;
 
-load('data_app_pd.mat')
+load('data_spectro.mat')
 
 nb_data = numel(label);
 
 % On change le nombre de plus proches voisins et le nombre de validations
-k_max = 3;
-nb_cross_validations = 10;
+k_max = 1;
+nb_cross_validations = 50;
 % On envoie les ratios d'apprentissage
-ratios_learning = 0.1:0.1:0.9;
+ratios_learning = 0.1:0.01:0.9;
 k_reco = 1:k_max;
 reco = zeros(numel(ratios_learning),k_max);
 

@@ -63,7 +63,7 @@ data(22:25,2) = 1;
 data(26,1) = 17;
 data(27:30,1) = 4;
 data(5,1) = 15;
-color = 'kgbrgbwb'
+color = 'kgbrgbwb';
 
 %% Affichage
 legend_polar = {};
@@ -81,9 +81,9 @@ for ind = 1:length(noms)
             end
             hold on;
             if ind2
-                strpeau = ' humidifie';
+                strpeau = ' humid';
             else
-                strpeau = ' sec';
+                strpeau = ' dry';
             end
             legend_polar = [legend_polar; strcat(noms(ind), ', ',strpeau)];
         end
@@ -92,5 +92,5 @@ end
 legend(legend_polar)
 xl = get(gca,'XLim'); yl = get(gca,'YLim');
 set(gca,'XLim', [0 xl(2)], 'YLim', [0 yl(2)]);
-ylabel('tension (Volt)') 
+ylabel('Potential (Volt)') 
 title('Polar scattering diagram of subjects')

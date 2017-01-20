@@ -76,8 +76,8 @@ for ind = 1:length(noms)
         end
     end
 end
-legend(legend_polar_triche)
+legend(legend_polare)
 xl = get(gca,'XLim'); yl = get(gca,'YLim');
 set(gca,'XLim', [0 xl(2)], 'YLim', [0 yl(2)]);
-ylabel('tension (Volt)') 
+ylabel('Tension (Volt)') 
 title('Polar scattering diagram of subjects')

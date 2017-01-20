@@ -83,10 +83,10 @@ for ind_pers = 1:size(mesures,2)
     hold on;
 end
 legend(noms)
-xlabel('Longueur d''onde en nanomètres')
+xlabel('Wavelength (nanometers)')
 ylabel('Amplitude')
 hold off;
-title('Spectres des échantillons de peaux')
+title('Skin samples spectrums')
 
 data = mesures_skin;
 label = mesures_skin_etiq;
