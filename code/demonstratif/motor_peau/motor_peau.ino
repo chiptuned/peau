@@ -24,7 +24,7 @@
 
 // Ici on définit les variables d'échantillonage/balayage
 int angle = 110;
-uint32_t time_scanning_millis = 2000;
+uint32_t time_scanning_millis = 1300;
 uint32_t pause_scanning_millis = 400;
 double angular_resolution = 0.5;
 int analog_res = 16;
@@ -56,7 +56,6 @@ void setup(){
   if(digitalRead(IN_BUTTON)){
     calibrate();
   }
-  curr_step_motor = 0;
   position_motor = 0;
   direction_motor = 1;
   digitalWrite(LED, LOW);
@@ -76,6 +75,7 @@ void loop()
 void stepper(int xw){
   int nb_mesures;
   int cpt_demi_scan = 0;
+  curr_step_motor = 0;
   send_format_info();
   delay(pause_scanning_millis);
   while(cpt_demi_scan < 2*nb_scans){
@@ -95,6 +95,7 @@ void stepper(int xw){
     delay(pause_scanning_millis);
     direction_motor=!direction_motor;
   }
+  init_motor();
 }
 
 // Fonction effectuant un step du moteur
@@ -185,10 +186,18 @@ void send_format_info(){
   Serial.println(nb_scans);
 }
 
+void init_motor(){
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+}
+
 // Fonction pour calibrer
 void calibrate(){
   direction_motor = 0;
-  for (int x=0;x<2000;x++){
+  for (int x=0;x<500;x++){
     set_output();
   }
+  init_motor();
 }
