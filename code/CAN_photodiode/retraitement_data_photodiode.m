@@ -76,7 +76,7 @@ for ind = 1:length(noms)
         end
     end
 end
-legend(legend_polare)
+legend(legend_polar)
 xl = get(gca,'XLim'); yl = get(gca,'YLim');
 set(gca,'XLim', [0 xl(2)], 'YLim', [0 yl(2)]);
 ylabel('Tension (Volt)') 
