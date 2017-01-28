@@ -23,9 +23,9 @@
 #define LED 13
 
 // Ici on définit les variables d'échantillonage/balayage
-int angle = 110;
-uint32_t time_scanning_millis = 1300;
-uint32_t pause_scanning_millis = 400;
+int angle = 105;
+uint32_t time_scanning_millis = 4000;
+uint32_t pause_scanning_millis = 500;
 double angular_resolution = 0.5;
 int analog_res = 16;
 int nb_scans = 1;
